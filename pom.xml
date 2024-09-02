@@ -50,7 +50,12 @@
             <artifactId>allure-testng</artifactId>
             <version>2.27.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.maven.plugin-tools</groupId>
+            <artifactId>maven-plugin-annotations</artifactId>
+            <version>3.13.1</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -100,4 +105,3 @@
         </plugins>
     </build>
 </project>
-

@@ -2,6 +2,7 @@ package Test;
 
 import Data.TestData;
 import Driver.SetUpDriver;
+import Driver.SetUpDriver2;
 import io.qameta.allure.Feature;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +22,7 @@ static TestData testData;
 
     @BeforeMethod
     public void DriverRunner(){
-   driver = SetUpDriver.SetUpdriver();
+   driver = SetUpDriver2.method1();
    testData = new TestData(driver);
    wait = new WebDriverWait(driver , Duration.ofSeconds(10));
 }
